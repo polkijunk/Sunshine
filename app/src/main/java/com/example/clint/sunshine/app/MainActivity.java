@@ -9,6 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -69,6 +73,9 @@ public class MainActivity extends ActionBarActivity {
                     "Sun - Sunny - 80/68"
             };
 
+            List<String> weekForecast = new ArrayList<String>(
+                    Arrays.asList(forecastArray)
+            );
             return rootView;
         }
     }
