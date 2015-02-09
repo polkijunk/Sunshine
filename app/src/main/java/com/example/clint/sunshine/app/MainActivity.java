@@ -1,15 +1,13 @@
 package com.example.clint.sunshine.app;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -60,6 +58,17 @@ public class MainActivity extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            String[] forecastArray = {
+                    "Today - Sunny - 88/63",
+                    "Tomorrow - Foggy - 70/40",
+                    "Weds - Cloudy - 72/63",
+                    "Thurs - Asteroids - 75/65",
+                    "Fri - Heavy Rain - 65/56",
+                    "Sat - HELP TRAPPED IN WEATHERSTATION - 60/51",
+                    "Sun - Sunny - 80/68"
+            };
+
             return rootView;
         }
     }
